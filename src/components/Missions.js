@@ -9,7 +9,7 @@ class Missions extends Component {
     return (
       <div data-testid="missions">
         <Title headline={ missionsString } />
-        <div>
+        <div className="Mission-Cards">
           {missions.map(({ name, year, country, destination }, index) => (
             <MissionCard
               key={ index }
